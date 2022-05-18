@@ -16,26 +16,29 @@
 			  </a>
 			</div>
 			<nav class="header-menu">
-			  <ul class="nav-list">
-				<li class="nav-items"> 
-				  <a class="item-link header-nav" href="#home">главная</a>
-				</li>
-				<li class="nav-items">
-				  <a class="item-link header-nav" href="#0">посты</a>
-				</li>
-				<li class="nav-items">
-				  <a class="item-link header-nav" href="#0">статьи</a>
-				</li>
-				<li class="nav-items">
-				  <a class="item-link header-nav" href="#0">теги</a>
-				</li>
-				<li class="nav-items">
-				  <a class="item-link header-nav" href="#0">темы</a>
-				</li>
-				<li class="nav-items">
-				  <a class="item-link header-nav" href="#0">контакты</a>
-				</li>
-			   </ul>  
+				<ul class="menu-nav-list">
+					<li class="nav-items"> 
+						<a class="item-link header-nav" href="#home">главная</a>
+					</li>
+					<li class="nav-items">
+						<a class="item-link header-nav" href="#0">посты</a>
+					</li>
+					<li class="nav-items">
+						<a class="item-link header-nav" href="#0">статьи</a>
+					</li>
+					<li class="nav-items">
+						<a class="item-link header-nav" href="#0">теги</a>
+					</li>
+					<li class="nav-items">
+						<a class="item-link header-nav" href="#0">темы</a>
+					</li>
+					<li class="nav-items">
+						<a class="item-link header-nav" href="#0">контакты</a>
+					</li>
+				</ul> 
+				<button class="header-nav-button">
+					<span class="menu-button-label">открыть меню</span>
+				</button> 
 			</nav>
 		  </div>
 		  <div class="header-title">
@@ -62,7 +65,7 @@
 							</ul>
 						</div>
 						<a href="#" class="hover">
-							<h2 class="post-title trend-title">Сейчас в тренде: сад на подоконнике</h2>
+							<h3 class="post-title trend-title">Сейчас в тренде: сад на подоконнике</h3>
 						</a>
 					</div>
 				</article>
@@ -76,7 +79,7 @@
 							</ul>
 						</div>
 						<a href="#" class="hover">
-							<h2 class="post-title trend-title">сыр на красивых картинках из интернета: какие они на вкус?</h2>
+							<h3 class="post-title trend-title">сыр на красивых картинках из интернета: какие они на вкус?</h3>
 						</a>
 					</div>
 				</article>
@@ -93,7 +96,7 @@
 							</ul>
 						</div>
 						<a href="#" class="hover">
-							<h2 class="post-title trend-title">собираемся в первый поход в горы</h2>
+							<h3 class="post-title trend-title">собираемся в первый поход в горы</h3>
 						</a>
 					</div>
 				</article>				
@@ -110,7 +113,7 @@
 							</ul>
 						</div>
 						<a href="#" class="hover">
-							<h2 class="post-title trend-title">сейчас в тренде: сколько витамина С в лимонах</h2>
+							<h3 class="post-title trend-title">сейчас в тренде: сколько витамина С в лимонах</h3>
 						</a>
 					</div>
 				</article>
@@ -486,17 +489,22 @@
 				<article class="product-post">
 					<div class="product-content">
 						<div class="product-body">
-							<img src="images/shop-item-desk1.jpg" class="pillow-post" alt="подушка на диван">
+							<picture>
+								<source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+								<source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+								<source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
+								<img src="images/shop-item-desk1.jpg" class="pillow-post" alt="подушка на диван">
+							</picture>
 							<h3 class="post-title product-title">подушка на диван</h3>
-							<p class="paragraph text-product">
-								Набор из двух подушек с модными принтами. Видео о создании <a class="item-link section-product" href="#home">здесь</a>.
+							<p class="text-product">
+								Набор из двух подушек с модными принтами. Видео о создании <a class="product-link" href="#home">здесь</a>.
 							</p>
 							<div class="product-footer">
 								<div class="product-prices">
 									<span class="price-title product-old-price">1000 ₽</span>
 									<span class="price-title product-new-price">800 ₽</span>
 								</div>
-								<button class="button shop-button" type="button">В магазин</button>
+								<div class="link-in-shop"><a class="shop-link">В магазин</a></div>
 							</div>
 						</div>
 					</div>
@@ -504,17 +512,22 @@
 				<article class="product-post">
 					<div class="product-content">
 						<div class="product-body">
-							<img src="images/shop-item-desk2.jpg" class="pillow-post" alt="подушка на диван">
+							<picture>
+								<source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+								<source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+								<source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
+								<img src="images/shop-item-desk2.jpg" class="pillow-post" alt="подушка на диван">
+							</picture>
 							<h3 class="post-title product-title">кукла «зайчик»</h3>
-							<p class="paragraph text-product">
-								Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="item-link section-product" href="#home">весенняя серия постов</a> в блоге и несколько подкастов.
+							<p class="text-product">
+								Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-link" href="#home">весенняя серия постов</a> в блоге и несколько подкастов.
 							</p>
 							<div class="product-footer">
 								<div class="product-prices">
 									<span class="price-title product-old-price">500 ₽</span>
 									<span class="price-title product-new-price">3500 ₽</span>
 								</div>
-								<button class="button shop-button" type="button">В магазин</button>
+								<div class="link-in-shop"><a class="shop-link">В магазин</a></div>
 							</div>
 						</div>
 					</div>
@@ -522,17 +535,22 @@
 				<article class="product-post">
 					<div class="product-content">
 						<div class="product-body">
-							<img src="images/shop-item-desk3.jpg" class="pillow-post" alt="подушка на диван">
+							<picture>
+								<source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+								<source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+								<source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
+								<img src="images/shop-item-desk3.jpg" class="pillow-post" alt="подушка на диван">							
+							</picture>
 							<h3 class="post-title product-title">Шестиугольная рамка</h3>
-							<p class="paragraph text-product">
-								Необычная рамка для украшения дома из видео <a class="item-link section-product" href="#home">«Как сделать рамку из подручных средств за 30 минут»</a>.
+							<p class="text-product">
+								Необычная рамка для украшения дома из видео <a class="product-link" href="#home">«Как сделать рамку из подручных средств за 30 минут»</a>.
 							</p>
 							<div class="product-footer">
 								<div class="product-prices">
 									<span class="price-title product-old-price">1000 ₽</span>
 									<span class="price-title product-new-price">800 ₽</span>
 								</div>
-								<button class="button shop-button" type="button">В магазин</button>
+								<div class="link-in-shop"><a class="shop-link">В магазин</a></div>								
 							</div>
 						</div>
 					</div>
