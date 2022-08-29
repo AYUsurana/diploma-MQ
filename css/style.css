@@ -275,8 +275,8 @@ p {
 
 .trands-list {
 	display: flex;
-	align-items: flex-end;
-
+	align-items: stretch;
+	
 	margin-top: 25px;
 }
 
@@ -426,6 +426,7 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 	justify-content: space-between;
+	padding: 44px 4%;
 }
 
 article {
@@ -725,11 +726,12 @@ main > article:nth-child(n+2) {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 1.5%;
+	padding: 0 35px;
 }
 
 .products-list {
 	display: flex;
+	margin-top: 25px;
 }
 
 .product-post {
@@ -810,6 +812,10 @@ main > article:nth-child(n+2) {
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
+	
+	.products {
+		padding: 0 2%;
+	}
 	.products-list {
 		flex-wrap: wrap;
 		padding: 0 35px;
@@ -850,7 +856,6 @@ main > article:nth-child(n+2) {
 @media (max-width: 640px) {
 	.products-list {
 		flex-direction: column;
-		padding: 0 4%;
 	}
 
 	.product-post-img {
@@ -978,9 +983,10 @@ footer {
 
 
 /*POPUP*/
-.popup {
-	display: none;
-	/*display: flex;*/
+.popup {	
+	overflow: scroll;
+	display: flex;
+	/*display: none;*/
 	position: fixed;
 	background: rgba(0, 0, 0, 0.6);
 	width: 100vw;
@@ -992,10 +998,9 @@ footer {
 
 .popup-container{
 	width: 390px;
-	min-height: 590px;
 	background-color: #ffffff;
-	padding: 50px 30px;
 	position: relative;
+	padding: 3%
 }
 
 .popup-block {
@@ -1069,7 +1074,7 @@ footer {
 .comment-group-textarea {
 	min-width: 100%;
 	max-width: 100%;
-	min-height: 130px;
+	min-height: 120px;
 	padding: 20px;
 	border: none;
 	background-color: #f4f7f6;
@@ -1103,8 +1108,21 @@ footer {
 }
 
 @media (max-width: 640px) {
-	.popup-container{
+	.popup-container {	
 		width: 330px;
-		min-height: 545px;
+		max-height: 450px;
+		margin: 35px 15px;
+	}
+	
+	.checkbox-group {
+		margin-bottom: 10px;
+	}
+	
+	.comment-group-textarea {
+		padding: 5%;
+	}
+	
+	.button-send {
+		margin-top: 3%;
 	}
 }
