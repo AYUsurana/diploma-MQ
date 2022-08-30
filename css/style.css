@@ -985,8 +985,8 @@ footer {
 /*POPUP*/
 .popup {	
 	overflow: scroll;
-	display: flex;
-	/*display: none;*/
+	/*display: flex;*/
+	display: none;
 	position: fixed;
 	background: rgba(0, 0, 0, 0.6);
 	width: 100vw;
