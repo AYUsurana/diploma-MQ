@@ -814,7 +814,7 @@ main > article:nth-child(n+2) {
 @media (min-width: 641px) and (max-width: 1199px) {
 	
 	.products {
-		padding: 0 2%;
+		padding: 0 3%;
 	}
 	.products-list {
 		flex-wrap: wrap;
@@ -980,8 +980,8 @@ footer {
 @media (max-width: 640px) {
 	
 	footer {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 4%;
+		padding-right: 4%;
 	}
 }
 
