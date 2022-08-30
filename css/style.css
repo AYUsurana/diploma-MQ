@@ -854,6 +854,10 @@ main > article:nth-child(n+2) {
 }
 
 @media (max-width: 640px) {
+	
+	.products {
+		padding: 0 1.5%;
+	}
 	.products-list {
 		flex-direction: column;
 	}
@@ -998,6 +1002,7 @@ footer {
 
 .popup-container{
 	width: 390px;
+	min-height: 590px;
 	background-color: #ffffff;
 	position: relative;
 	padding: 3%
@@ -1110,7 +1115,7 @@ footer {
 @media (max-width: 640px) {
 	.popup-container {	
 		width: 330px;
-		max-height: 450px;
+		min-height: 540px;
 		margin: 35px 15px;
 	}
 	
